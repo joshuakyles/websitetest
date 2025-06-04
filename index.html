@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Kyles</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    .fullscreen {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      border: none;
+      z-index: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 2rem;
+      border-radius: 20px;
+      z-index: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="fullscreen">
+    <iframe src="https://player.vimeo.com/video/1090331190?h=b09b6b54de&autoplay=1&loop=1&muted=1&background=1"></iframe>
+    <div class="overlay">
+      <h1>Joshua Kyles</h1>
+      <p>Custom hero section with Vimeo background</p>
+    </div>
+  </div>
+</body>
+</html>
